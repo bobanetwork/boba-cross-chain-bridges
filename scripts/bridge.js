@@ -1,11 +1,11 @@
 const { ethers } = require("ethers");
 require("dotenv").config();
 
-const AltL1BridgeJson = require("./abi/AltL1Bridge.json");
-const ETHL1BridgeJson = require("./abi/ETHBridge.json");
-const Lib_ResolvedDelegateProxyJson = require("./abi/Lib_ResolvedDelegateProxy.json");
-const L2StandardERC20Json = require("./abi/L2StandardERC20.json");
-const LZEndpointMockJson = require("./abi/LZEndpointMock.json");
+const AltL1BridgeJson = require("../abi/AltL1Bridge.json");
+const ETHL1BridgeJson = require("../abi/ETHBridge.json");
+const Lib_ResolvedDelegateProxyJson = require("../abi/Lib_ResolvedDelegateProxy.json");
+const L2StandardERC20Json = require("../abi/L2StandardERC20.json");
+const LZEndpointMockJson = require("../abi/LZEndpointMock.json");
 
 const ETH_CHAIN_URL = process.env.ETH_CHAIN_URL;
 const TARGET_CHAIN_URL = process.env.TARGET_CHAIN_URL;

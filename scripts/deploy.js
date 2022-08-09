@@ -3,10 +3,10 @@ require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
 
-const AltL1BridgeJson = require("./abi/AltL1Bridge.json");
-const ETHL1BridgeJson = require("./abi/ETHBridge.json");
-const Lib_ResolvedDelegateProxyJson = require("./abi/Lib_ResolvedDelegateProxy.json");
-const L2StandardERC20Json = require("./abi/L2StandardERC20.json");
+const AltL1BridgeJson = require("../abi/AltL1Bridge.json");
+const ETHL1BridgeJson = require("../abi/ETHBridge.json");
+const Lib_ResolvedDelegateProxyJson = require("../abi/Lib_ResolvedDelegateProxy.json");
+const L2StandardERC20Json = require("../abi/L2StandardERC20.json");
 
 const ETH_CHAIN_URL = process.env.ETH_CHAIN_URL;
 const TARGET_CHAIN_URL = process.env.TARGET_CHAIN_URL;
@@ -166,7 +166,7 @@ const main = async () => {
     AltL1BOBA: BOBA.address,
     ETHBOBA: ETH_L1_BOBA_ADDRESS,
   }
-  const dumpsPath = path.resolve(__dirname, "./addresses");
+  const dumpsPath = path.resolve(__dirname, "../addresses");
   const addrsPath = path.resolve(dumpsPath, `${LAYER_ZERO_CHAIN_NAME}.json`);
   await fs.promises.writeFile(addrsPath, JSON.stringify(payload));
 

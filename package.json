@@ -4,7 +4,7 @@
   "description": "BOBA Cross Chain Bridges",
   "scripts": {
     "deploy": "node ./scripts/deploy.js",
-    "bridge": "node ./scriptsbridge.js"
+    "bridge": "node ./scripts/bridge.js"
   },
   "author": "BOBA Network",
   "license": "MIT",
