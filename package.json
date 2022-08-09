@@ -1,0 +1,15 @@
+{
+  "name": "boba-cross-chain-bridges",
+  "version": "1.0.0",
+  "description": "BOBA Cross Chain Bridges",
+  "scripts": {
+    "deploy": "node ./scripts/deploy.js",
+    "bridge": "node ./scriptsbridge.js"
+  },
+  "author": "BOBA Network",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.9"
+  }
+}
