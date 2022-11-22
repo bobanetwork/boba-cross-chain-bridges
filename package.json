@@ -7,7 +7,8 @@
     "bridge": "node ./scripts/bridge.js",
     "configure": "node ./scripts/configure.js",
     "upgrade:v2": "node ./scripts/upgrade.js",
-    "bridgeFromEthToAltL1": "node scripts/bridgeFromEthereumToAltL1.js"
+    "bridgeFromEthToAltL1": "node scripts/bridgeFromEthereumToAltL1.js",
+    "bridgeFromAltL1ToEth": "node scripts/bridgeFromAltL1ToEthereum.js"
   },
   "author": "BOBA Network",
   "license": "MIT",

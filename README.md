@@ -31,6 +31,35 @@ $ npm install
   $ node scripts/bridgeFromEthereumToAltL1.js
   ```
 
+## Bridge BOBA tokens from Alt L1s to Eth
+
+* Install packages
+
+```bash
+$ yarn install
+# or 
+$ npm install
+```
+
+* Add `.env` in the root directory
+
+  | Environment Variable   | Required |                                                              |
+  | ---------------------- | -------- | ------------------------------------------------------------ |
+  | ETH_CHAIN_URL          | No       | Ethereum node URL                                            |
+  | ORIGIN_CHAIN_URL       | Yes      | Alt L1 web3 node URL                                         |
+  | ORIGIN_CHAIN_NAME      | Yes      | BNB \|\|Fantom \|\| Avalanche \|\| Moonbeam                  |
+  | PRIVATE_KEY            | Yes      | Private key for bridging BOBA from Alt L1 to Eth             |
+  | DEPOSIT_AMOUNT         | Yes      | We automatically attach 18 decimals to your amount (1 means one BOBA) |
+  | DEPOSIT_WALLET_ADDRESS | No       | The wallet address for receiving the BOBA on Eth             |
+
+* Run script
+
+  ```bash
+  $ yarn bridgeFromAltL1ToEth
+  #or
+  $ node scripts/bridgeFromAltL1ToEthereum.js
+  ```
+
 ## Tests
 
 ### Usage
